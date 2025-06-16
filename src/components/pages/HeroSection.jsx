@@ -1,13 +1,14 @@
 import Lottie from "lottie-react";
 import ScrollDown from "../../assets/lottie-video/scroll-down-white.json";
 import About from "../fragments/About";
+import VideoBG from "../../assets/video/sample-bg.mp4";
 
 export default function HeroSection() {
   return (
     <section className="relative w-full h-[285vh] bg-black">
       <div className="fixed w-full h-[100vh] top-0 left-0 z-5 saturate-50">
         <video autoPlay loop muted className="w-full h-[100vh] object-cover">
-          <source src="/src/assets/video/sample-bg.mp4" type="video/mp4" />
+          <source src={VideoBG} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
